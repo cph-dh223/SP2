@@ -2,8 +2,8 @@ public class DieselCar extends AFuelCar{
 
     private boolean particleFilter;
 
-    public DieselCar(String make, String model, int numberOfDoors, boolean particleFilter, int kmPrLiter) {
-        super(make, model, numberOfDoors, kmPrLiter);
+    public DieselCar(String make, String model, int numberOfDoors, String registrationNumber, boolean particleFilter, int kmPrLiter) {
+        super(make, model, numberOfDoors, kmPrLiter, registrationNumber);
         this.particleFilter = particleFilter;
     }
 

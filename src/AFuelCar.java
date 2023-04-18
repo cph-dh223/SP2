@@ -1,8 +1,8 @@
 public abstract class AFuelCar extends ACar {
     protected int kmPrLitre;
 
-    public AFuelCar(String make, String model, int numberOfDoors, int kmPrLitre) {
-        super(make, model, numberOfDoors);
+    public AFuelCar(String make, String model, int numberOfDoors, int kmPrLitre, String registrationNumber) {
+        super(make, model, numberOfDoors, registrationNumber);
         this.kmPrLitre = kmPrLitre;
     }
 

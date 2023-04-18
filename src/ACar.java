@@ -4,7 +4,8 @@ public abstract class ACar implements Car{
     protected final String model; // The model of the car e.g. A6
     protected final int numberOfDoors; // The number of doors
 
-    protected ACar(String make, String model, int numberOfDoors) {
+    protected ACar(String make, String model, int numberOfDoors, String registrationNumber) {
+        this.registrationNumber = registrationNumber;
         this.make = make;
         this.model = model;
         this.numberOfDoors = numberOfDoors;

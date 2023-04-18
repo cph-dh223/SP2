@@ -1,8 +1,8 @@
 public class GasolinCar extends AFuelCar{
 
 
-    public GasolinCar(String make, String model, int numberOfDoors, int kmPrLitre) {
-        super(make, model, numberOfDoors, kmPrLitre);
+    public GasolinCar(String make, String model, int numberOfDoors, String registrationNumber, int kmPrLitre) {
+        super(make, model, numberOfDoors, kmPrLitre, registrationNumber);
     }
 
     @Override
