@@ -37,7 +37,7 @@ public class ElectricCar extends ACar{
         sb.append("********\n");
         sb.append("Electric car\n");
         sb.append(super.toString());
-        sb.append("Battery capacity:" + batteryCapacity + "Wh\n");
+        sb.append("Battery capacity: " + batteryCapacity + "Wh\n");
         sb.append("Max range:" + maxRange + "\n");
         return sb.toString();
     }
