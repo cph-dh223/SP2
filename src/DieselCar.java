@@ -14,16 +14,7 @@ public class DieselCar extends AFuelCar{
 
     @Override
     public int getRegistrationFee() {
-        int gasFee =
-                kmPrLitre >= 20
-                    ? 330
-                    : kmPrLitre >= 15
-                        ? 1050
-                        : kmPrLitre >= 10
-                            ? 2340
-                            : kmPrLitre >= 5
-                                ? 5500
-                                : 10479;
+        int gasFee = super.getRegistrationFee();
         int filterFee = particleFilter ? 0 : 1000;
         int equalizationTax =
                 kmPrLitre >= 20

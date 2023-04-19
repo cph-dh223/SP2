@@ -15,4 +15,17 @@ public abstract class AFuelCar extends ACar {
     public String toString() {
         return super.toString()+"km/l: " + kmPrLitre + "\n";
     }
+
+    @Override
+    public int getRegistrationFee() {
+        return kmPrLitre >= 20
+                    ? 330
+                    : kmPrLitre >= 15
+                        ? 1050
+                        : kmPrLitre >= 10
+                            ? 2340
+                            : kmPrLitre >= 5
+                                ? 5500
+                                : 10479;
+    }
 }
