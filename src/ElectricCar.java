@@ -22,7 +22,7 @@ public class ElectricCar extends ACar{
                             : 10479;
     }
     public int getBatteryCapacityKWh(){
-        return batteryCapacity;
+        return batteryCapacity/1000;
     }
     public int getMaxRangeKm(){
         return maxRange;
